@@ -14,13 +14,16 @@ const initdb = async () =>
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
 export const putDb = async (content) => {
+  console.log('Put to the database');
   const connectDb = await openDB('jate', 1);
   const txt = connectDb.transaction('jate', 'readwrite');
   const obStore = txt.objectStore('jate');
-  const request = obStore.add({ content: content });
+  const request = obStore.put({ id: 1, value: content });
   const result = await request;
-  console.log('content saved to the database', result);
-  // console.error('putDb not implemented');
+  result
+    ? console.log('content saved to the database', result.value)
+    : console.error('putDb not implemented');
+    return result?.value;
 };
 
 
@@ -29,11 +32,12 @@ export const getDb = async () => {
   const connectDb = await openDB('jate', 1);
   const txt = connectDb.transaction('jate', 'readonly');
   const obStore = txt.objectStore('jate');
-  const request = obStore.getAll();
+  const request = obStore.get(1);
   const result = await request;
-  console.log('result.value', result);
-  return result;
-  // console.error('getDb not implemented');
+  result
+    ? console.log('content received from database', result.value)
+    : console.error('getDb not implemented');
+  return result?.value;
 };
 
 initdb();

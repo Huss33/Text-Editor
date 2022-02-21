@@ -24,20 +24,20 @@ module.exports = () => {
 
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Text Editor'
+        title: 'J.A.T.E'
       }),
 
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'serviceWorker',
+        swDest: 'src-sw.js',
       }),
 
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Text Editor',
-        short_name: 'TxtEdit',
-        description: 'Write, delete, and update text!',
+        name: 'Just Another Text Editor',
+        short_name: 'J.A.T.E',
+        description: 'Takes notes with JavaScript syntax highlighting!',
         background_color: '#225ca3',
         theme_color: '#225ca3',
         start_url: '/',
