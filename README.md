@@ -23,7 +23,7 @@ GitHub link: https://github.com/Huss33/Text-Editor
 
 ## Screenshots
 
-![App Screenshot](https://github.com/Huss33/Project_2_uofm/blob/main/public/images/CaptureForReal.JPG)
+![App Screenshot](https://github.com/Huss33/Text-Editor/blob/main/Assets/text%20editor%20snip.JPG)
 
 
 ## Roadmap
