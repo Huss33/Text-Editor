@@ -19,7 +19,7 @@ GitHub link: https://github.com/Huss33/Text-Editor
 - app can be used to write, delete, and update text
 - app allows the user to write text using JavaScript highlighting
 - app should save all notes unless deleted by the user
-- app should run even when not online
+- app should be installable and therefore can run even when offline
 
 ## Screenshots
 
