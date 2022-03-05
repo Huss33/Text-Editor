@@ -7,6 +7,7 @@ Text Editor (J.A.T.E)
 ## Demo
 
 Project Live Link: https://thawing-river-45545.herokuapp.com/
+
 GitHub link: https://github.com/Huss33/Text-Editor
 
 ## Authors
