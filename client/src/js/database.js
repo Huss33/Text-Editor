@@ -20,6 +20,7 @@ export const putDb = async (content) => {
   const obStore = txt.objectStore('jate');
   const request = obStore.put({ id: 1, value: content });
   const result = await request;
+  console.log(result);
   result
     ? console.log('content saved to the database', result.value)
     : console.error('putDb not implemented');
@@ -34,6 +35,7 @@ export const getDb = async () => {
   const obStore = txt.objectStore('jate');
   const request = obStore.get(1);
   const result = await request;
+  console.log(result);
   result
     ? console.log('content received from database', result.value)
     : console.error('getDb not implemented');
